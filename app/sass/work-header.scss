@@ -1,0 +1,119 @@
+.work-header {
+  background: url("../img/work-img.png") no-repeat center/cover;
+  padding-bottom: 107px;
+}
+.section-work {
+  &__border-top {
+    margin: 0 auto;
+    border: 2px solid $color-spaces;
+    max-width: 1100px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__portfolio-title {
+    margin: 42px 0 42px 30px;
+
+    @media (max-width: 989px) {
+      margin-right: 15px;
+    }
+  }
+  &__title-text {
+    color: $color-white;
+    font: 700 20px $font-lato;
+  }
+  &__link-block {
+    margin: 42px 20px 0 0;
+
+    @media (max-width: 583px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__link {
+    margin: 0 50px 0 0;
+    text-decoration: none;
+    color: $color-white;
+    font: 700 16px $font-lato;
+    padding: 7px 7px;
+    &:hover {
+      border-radius: 5px;
+      background-color: #f5c149;
+    }
+  }
+  &__border-bottom {
+    margin: 0 auto 47px;
+    border: 2px solid $color-spaces;
+    max-width: 1100px;
+  }
+  &__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 583px) {
+      justify-content: center;
+    }
+  }
+  &__item {
+    max-width: 260px;
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    @media (max-width: 989px) {
+      margin: 0 auto 15px;
+    }
+  }
+  &__wrapper--img {
+    max-width: 260px;
+    img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+  }
+  &__title-container {
+    background-color: $color-gray-saturated;
+    text-align: center;
+    padding: 20px 79px;
+  }
+  &__title-description {
+    color: #727272;
+    font: 400 14px $font-lato;
+  }
+}
+
+.content {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $color-white;
+  text-transform: uppercase;
+  font-size: 28px;
+  &__link {
+    text-decoration: none;
+  }
+  &__add {
+    max-width: 50px;
+    width: 100%;
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 77%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: url("../img/work-hover-img.png") no-repeat center/cover;
+  &:hover {
+    background-color: #3d4d29;
+    opacity: .7;
+  }
+}

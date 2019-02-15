@@ -1,0 +1,23 @@
+.section-title {
+  padding-top: 134px;
+  color: $color-white;
+  width: 100%;
+  text-align: center;
+  &__title {
+    font: 300 60px/58px $font-lato;
+    text-transform: uppercase;
+    margin: 38px;
+
+    @media (max-width: 583px) {
+      font-size: 50px;
+    }
+  }
+  &__paragraph {
+    font: 400 20px/58px $font-lato;
+    text-transform: uppercase;
+  }
+  &__description {
+    color: #ffcccf;
+    font: 400 14px/24px $font-lato;
+  }
+}

@@ -1,0 +1,30 @@
+.section-footer {
+  background-color: $color-contacts;
+  padding: 41px 0 49px;
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    margin: 0 10px 0;
+    max-width: 60px;
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  &__social {
+    text-decoration: none;
+    .fa-facebook,
+    .fa-twitter,
+    .fa-google-plus,
+    .fa-linkedin {
+      background-color: #82c8bd;
+      padding: 10px 15px;
+      border-radius: 100%;
+      color: $color-white;
+      &:hover {
+        background-color: #4d3f4b;
+      }
+    }
+  }
+}
